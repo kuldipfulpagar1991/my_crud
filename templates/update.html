@@ -1,0 +1,20 @@
+<h1>Update Record</h1>
+<form action='updaterecord//{{mylife.id}}' method='post'>
+    {% csrf_token %}
+    Age:<br>
+    <input name='age' value="{{mylife.age}}">
+    <br><br>
+    Topic:<br>
+    <input name='topic' value="{{mylife.topic}}">
+    <br><br>
+    College:<br>
+    <input name='college' value="{{mylife.college}}">
+    <br><br>
+    School:<br>
+    <input name='school' value="{{mylife.school}}">
+    <br><br>
+    Roll No:<br>
+    <input name='rollno' value="{{mylife.rollno}}">
+    <br><br>
+    <input type='submit' value='submit'>
+</form>

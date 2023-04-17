@@ -1,0 +1,15 @@
+<h1>Registration</h1>
+<table border='10'>
+    {% for x in mylife %}
+    <tr>
+        <td>{{x.id}}</td>
+            <td>{{x.age}}</td>
+            <td>{{x.topic}}</td>
+            <td>{{x.college}}</td>
+            <td>{{x.school}}</td>
+            <td>{{x.rollno}}</td>
+            <td><a href="delete/{{x.id}}">Delete</a></td>
+            <td><a href="update/{{x.id}}">Update</a></td>
+    </tr>
+    {% endfor %}
+</table>
